@@ -6,5 +6,5 @@ import numpy as np
 def load_dataset(path_file):
 
     data = scio.loadmat(path_file)
-    return data['ecgs'], data['labels']
+    return data['ecgs'], *data['labels']
 

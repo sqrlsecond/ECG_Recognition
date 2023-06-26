@@ -9,7 +9,7 @@ class EcgDataset(Dataset):
         self.labels = torch.Tensor(labels)
     
     def __getitem__(self, idx):
-        return self.ecgs[idx], self.label[idx]
+        return self.ecgs[idx], self.labels[idx]
 
     def __len__(self):
         return len(self.labels)
